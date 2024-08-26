@@ -1,4 +1,4 @@
-### Readers-Writers Synchronization Problem
+# Readers-Writers Synchronization Problem
 
 This program implements an efficient solution to the classic readers-writers problem by allowing fine-grained control over access to shared resources. Unlike the typical approach, where the entire file is locked when a writer modifies a record, this implementation only locks the specific record/records being accessed. This allows multiple readers and writers to operate simultaneously on different records, significantly improving concurrency and performance. The program manages access using an array to track active and blocked processes, ensuring that the critical section is protected while allowing for greater parallelism and reducing unnecessary blocking.
 
